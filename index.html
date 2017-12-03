@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>EMR</title>
+	<link rel="stylesheet" type="text/css" href="css/1stpage.css">
+	<script type="text/javascript" src="jquery/jquery.js"></script>
+    
+    <script type="text/javascript">
+ $ (document).ready(function(){
+ $ ('.doctor').click(function(){
+
+ 	$('#login').toggle();
+ 	$('#signup').hide();
+ });
+
+
+
+});
+
+
+
+  $ (document).ready(function(){
+ $ ('#Account').click(function(){
+
+ 	$('#signup').show();
+$('#login').hide();
+ });
+
+
+
+});
+
+ $ (document).ready(function(){
+ $ ('#cancel').click(function(){
+
+ 	$('#signup').hide();
+ });
+
+
+
+});
+
+    </script>
+</head>
+<body>
+<div id="header">
+	<div class="main">
+	<div id="logo"></div>
+	<div id="nav">	
+<ul>
+	
+<li><a class="doctor" href="#" onclick="return false">Doctor</a></li>
+<li><a href="#">Patient</a></li>
+<li><a href="#">Radiology</a></li>
+<li><a href="#">Miscillineous</a></li>
+<li><a href="#">Lab</a></li>
+</ul>
+<div style="clear:both"></div>
+</div>
+<div style="clear:both"></div>
+	</div>
+
+</div>
+
+
+<div id="body">
+
+<div class="main">
+<div id="sign">
+	<div id="login">
+	<p>Do you have an Account?</p>
+	   <form>
+		<span>Register Id</span> <input class="panel" type="text" size="20" placeholder="Registered ID*"><br>
+		<span>Password</span> <input class="panel" type="password" size="20" Placeholder="Password*"><br>
+		<input onclick="return false" id ="Account" class="panel button" type="submit" value="Signup">
+		<input onclick="return false" class="panel button" type="submit" value="Login">
+
+	     </form>
+		
+
+<div style="clear:both"></div>
+	</div>
+	<div id="signup">
+
+		<!-- <p>Do you have an Account?</p> -->
+	   <form>
+	   <div id="cross"> <i style="float:right; cursor:pointer;" id="cancel" class="fa fa-times"></i></div>
+		<div id="info"><span>Register Id</span><input class="panel" type="text" size="20" placeholder="Registered ID*"><br>
+		<span>Name</span><input class="panel" type="text" size="20" Placeholder="Name*"><br>
+		<span>Contact No</span><input class="panel" type="text" size="20" placeholder="Contact No*"><br>
+		<span>CNIC No</span><input class="panel" type="password" size="20" Placeholder="CNIC No*"><br></div>
+		<div id="password"><span>Password</span><input class="panel" type="password" size="20" Placeholder="Password*"><br>
+		<span>Retype Password</span><input class="panel" type="password" size="20" Placeholder="Retype Password*"><br>
+		<span style="float:left;">Clinic Address</span><textarea class="panel" rows="3" cols="34"></textarea><br>
+		<input onclick="return false" class="panel button" type="submit" value="Create Account"></div>
+		
+       
+	     </form>
+<div style="clear:both"></div>
+
+	</div>
+
+</div>
+</div>	
+
+</div>
+<div id="footer">
+<div class="main"></div>	
+
+</div>
+
+</body>
+</html>
